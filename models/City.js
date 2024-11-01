@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";  
 
 // 1. definimos la coleccion
-let collection = 'Cities'
+let collection = 'cities'
 
 // 2. definimos un esquema, recibe un objeto
 

@@ -1,5 +1,6 @@
 import City from "../../models/City.js";
 
+
 //importamos la funcion que tenemos dentro del router y lo guardamos en una funcion
 let allCities = async (req, res, next) => { //peticion tipo request
     try {
