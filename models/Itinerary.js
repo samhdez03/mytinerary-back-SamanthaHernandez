@@ -6,6 +6,7 @@ let collection = 'itineraries'
 // 2. definimos un esquema, recibe un objeto
 
 let schema = new Schema({
+    name: {type:String, required:true},
     guide: {type:String, required:true},
     img: {type:String, required:true},
     price: {type:Number, required:true},
