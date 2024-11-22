@@ -11,7 +11,7 @@ export default async(req, res, next) => {
         }
   
         res.redirect(
-          `${frontendURL}?token=${token}&name=${user.name}&lastName=${user.lastName}&email=${user.email}&photo=${user.photo}`
+          `${frontendURL}?token=${token}&name=${user.name}&lastName=${user.lastName}&email=${user.email}&photo=${user.photo}&_id=${user._id}&country=${user.country}`
         );
       } catch (error) {
         console.error("Error during Google callback:", error);

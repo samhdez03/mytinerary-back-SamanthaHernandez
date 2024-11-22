@@ -23,7 +23,7 @@ router.delete("/deleteByID/:id", passport.authenticate('jwt',{session:false}), v
 router.delete("/deleteMany", passport.authenticate('jwt',{session:false}), validatorBody(schemaName), deleteMany) //se borra por nombre en el body
 router.put("/updateOne/:name", passport.authenticate('jwt',{session:false}), validatorParams(schemaNameUpdate), validatorBody(schemaBody), updateOne ) //Condiciones para la búsqueda por params se pueden modificar varios campos
 router.put("/updateMany/:name", passport.authenticate('jwt',{session:false}), validatorParams(schemaNameUpdate), validatorBody(schemaBody), updateMany ) // Condiciones para la búsqueda (nombre)
-router.put("/updateByID/:id", passport.authenticate('jwt',{session:false}), validatorParams(schemaID), validatorBody(schemaBody), updateByID )
+router.put("/updateByID/:id", validatorParams(schemaID), validatorBody(schemaBody), updateByID )
 router.post("/signUp",validatorBody(schemaCreate),accountExists, generateToken, create)
 
 export default router
