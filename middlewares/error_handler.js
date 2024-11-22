@@ -1,17 +1,9 @@
 const error_handler = (error,req,res,next) => {
-    console.log(error.status)
-    if (error.status === 400) {
-        return res.status(400).json({
-            sucess: false,
-            response:error,
-            message:"The body of the request must be an array"
-        })
-    } else
+    console.log(error);
     return res.status(500).json({
-        sucess: false,
-        response:error,
-        message:"General error"
+        success: false,
+        response: error,
+        messagge: "Error"
     })
 }
-
 export default error_handler
