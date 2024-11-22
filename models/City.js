@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";  
+import { Schema, model } from "mongoose"  
 
 // 1. definimos la coleccion
 let collection = 'cities'

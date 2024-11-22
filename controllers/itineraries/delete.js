@@ -1,4 +1,4 @@
-import Itinerary from "../../models/Itinerary.js";
+import Itinerary from "../../models/Itinerary.js"
 
 //para borrar el primero en que coincida el nombre
 let deleteOne = async (req, res, next) => {

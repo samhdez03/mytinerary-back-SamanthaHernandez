@@ -7,7 +7,6 @@ export default (req,res,next) => {
         passwordBody,
         passwordDB
     )
-    console.log("Result of comparation:", compare)
     if (compare) {
         delete req.body.password
         return next()

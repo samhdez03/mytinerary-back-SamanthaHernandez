@@ -1,4 +1,4 @@
-import Itinerary from "../../models/Itinerary.js";
+import Itinerary from "../../models/Itinerary.js"
 
 //dejamos que se puedan modificar los campos que se quieran y la busqueda se realiza por guia
 let updateOne = async (req, res, next) => {

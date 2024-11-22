@@ -1,10 +1,10 @@
 // 1. 
-import "dotenv/config.js"; //conexion a la base de datos
+import "dotenv/config.js" //conexion a la base de datos
 // 2. configuracion para la conexion a la BD
 import '../../config/database.js'
 
 // 3. importamos el modelo de la base de datos
-import City from "../City.js";
+import City from "../City.js"
 
 let cities = [
     { name: "Alderaan", img: "https://lumiere-a.akamaihd.net/v1/images/alderaan-main_f5b676cf.jpeg?region=0%2C0%2C1280%2C720", appearances: "Star Wars: A New Hope (Episode IV), Star Wars: Revenge of the Sith (Episode III), Star Wars: The Clone Wars, Obi-Wan Kenobi", affiliations: "Galactic Empire, Galactic Republic, Alderaan Royal Family", climate: "Temperate", locations: "Aldera spaceport", terrain: "Mountains", species: "", creature: "", vehicles: "Alderaan Cruiser, Tantive IV, Alderaan royal speeder" },

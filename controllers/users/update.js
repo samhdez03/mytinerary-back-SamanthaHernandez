@@ -1,4 +1,4 @@
-import User from "../../models/User.js";
+import User from "../../models/User.js"
 
 //dejamos que se puedan modificar los campos que se quieran y la busqueda se realiza por name
 let updateOne = async (req, res, next) => {

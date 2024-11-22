@@ -1,4 +1,4 @@
-import Itinerary from "../../models/Itinerary.js";
+import Itinerary from "../../models/Itinerary.js"
 
 let create = async (req, res, next) => {
     try {
@@ -16,17 +16,17 @@ let create = async (req, res, next) => {
 
 let createMany = async (req, res, next) => {
     try {
-        let itineraries = req.body;
+        let itineraries = req.body
 
         // Validar que req.body sea un arreglo
         if (!Array.isArray(itineraries)) {
             next(error)
         }
 
-        let all = await Itinerary.insertMany(itineraries);
+        let all = await Itinerary.insertMany(itineraries)
         return res.status(201).json({
             response: all
-        });
+        })
     } catch (error) {
         next(error)
     }

@@ -1,4 +1,4 @@
-import User from "../../models/User.js";
+import User from "../../models/User.js"
 
 //para borrar el primero en que coincida el name
 let deleteOne = async (req, res, next) => {

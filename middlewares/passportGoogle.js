@@ -15,7 +15,6 @@ export default passport.use(
             let user = await User.findOne({
                 email: profile.emails[0].value
             })
-            console.log(profile)
             if (!user) {
                 // si no existe creo uno nuevo
                 user = new User({
@@ -29,8 +28,6 @@ export default passport.use(
                 })
                 await user.save()
             }
-            console.log("user info")
-            console.log(user)
             return done(null,user)
             
 

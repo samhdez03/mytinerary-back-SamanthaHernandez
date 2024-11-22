@@ -1,4 +1,4 @@
-import City from "../../models/City.js";
+import City from "../../models/City.js"
 
 //dejamos que se puedan modificar los campos que se quieran y la busqueda se realiza por nombre
 let updateOne = async (req, res, next) => {

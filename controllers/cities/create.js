@@ -1,4 +1,4 @@
-import City from "../../models/City.js";
+import City from "../../models/City.js"
 
 let create = async (req, res, next) => {
     try {
@@ -16,17 +16,17 @@ let create = async (req, res, next) => {
 
 let createMany = async (req, res, next) => {
     try {
-        let cities = req.body;
+        let cities = req.body
 
         // Validar que req.body sea un arreglo
         if (!Array.isArray(cities)) {
             next(error)
         }
 
-        let all = await City.insertMany(cities);
+        let all = await City.insertMany(cities)
         return res.status(201).json({
             response: all
-        });
+        })
     } catch (error) {
         next(error)
     }

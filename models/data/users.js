@@ -1,7 +1,7 @@
-import "dotenv/config.js"; //conexion a la base de datos
+import "dotenv/config.js" //conexion a la base de datos
 import '../../config/database.js'
 //importamos el modelo
-import User from "../User.js";
+import User from "../User.js"
 
 const users = [
     {

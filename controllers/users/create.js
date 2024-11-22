@@ -1,4 +1,4 @@
-import User from "../../models/User.js";
+import User from "../../models/User.js"
 
 let create = async (req, res, next) => {
     try {

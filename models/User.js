@@ -1,5 +1,5 @@
 
-import { Schema, model } from "mongoose";  
+import { Schema, model } from "mongoose"  
 import bcryptjs from 'bcryptjs' 
 
 // 1. definimos la coleccion

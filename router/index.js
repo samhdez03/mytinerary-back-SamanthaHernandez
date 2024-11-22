@@ -4,7 +4,7 @@ import itinerariesRouter from "./itineraries.js"
 import routerAuth from "./auth.js"
 import routerCountries from "./countries.js"
 import routerUsers from "./user.js"
-const router = Router();
+const router = Router()
 
 router.use("/cities", citiesRouter)
 router.use("/itineraries", itinerariesRouter)

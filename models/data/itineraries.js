@@ -1,10 +1,10 @@
 // 1. 
-import "dotenv/config.js"; //conexion a la base de datos
+import "dotenv/config.js" //conexion a la base de datos
 // 2. configuracion para la conexion a la BD
 import '../../config/database.js'
 
 // 3. importamos el modelo de la base de datos
-import Itinerary from "../Itinerary.js";
+import Itinerary from "../Itinerary.js"
 
 let itineraries = [
     { name: "Escape from the Depths of Mon Cala", guide: "Admiral Ackbar", img: "https://lumiere-a.akamaihd.net/v1/images/databank_ackbar_01_169_55137220.jpeg?region=0%2C0%2C1560%2C878", price: 15000, duration: "4 parsecs", likes: "0", hashtags: "#It’sATrap #RebelAlliance #MonCalamari", city: "67184c575c5cddedc86d9f33", comments: "" },
